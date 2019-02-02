@@ -10,14 +10,26 @@ body{
 h1{
   font-weight: bold;
 }
+header{
+  margin-bottom: 30px;
+}
 .menu{
   background-color: silver;
   border: 1px solid #000;
-  margin: 15px;
+  margin: 0 10px 10px 0;
 }
 .check{
   text-align: left;
   padding: 10px;
+}
+#chicken{
+  margin-left: 5px;
+}
+#beef{
+  margin-left: 5px;
+}
+#sushi{
+  margin-left: 5px;
 }
 #c{
   background-color: pink;
@@ -49,22 +61,30 @@ h1{
 }
 
 @media screen and (min-width: 768px) {
-
+  #main{
+    width: 991px;
+    display: inline-block;
+    margin-top: 10px;
+  }
   #chicken{
     float: left;
-    width: 46%;
+    width: 48%;
   }
+
   #beef{
-    float: right;
-    width: 46%;
+    float: left;
+    width: 48%;
   }
   #sushi{
-    clear: both;
+    clear: left;
   }
 }
 
 @media screen and (min-width: 992px) {
   body {
+  }
+  header{
+    margin-bottom: 150px;
   }
   .menu{
     margin: 0;
@@ -75,8 +95,7 @@ h1{
   grid-template-rows: auto;
   grid-gap: 0;
   justify-items: center;
-  margin: 140px;
-  width: 990px;
+  width: 100%;
   }
   #chicken{
     grid-column: 1;
